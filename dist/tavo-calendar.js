@@ -488,6 +488,10 @@
         return this.state;
     }
 
+    TavoCalendar.prototype.setSelected = function(selected) {
+        this.state.selected = selected;
+    }
+
     TavoCalendar.prototype.sync = function(obj) {
         const state = JSON.parse(JSON.stringify(obj.state));
         const config = JSON.parse(JSON.stringify(obj.config));
